@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Hall</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="">
+    <div id="cover">
+        <div class="head-bg"></div>
+        <div class="contacts">
+            <div class="contacts-container">
+                <a href="/" class="info">Про проект</a>
+                <a href="/" class="info">Переваги</a>
+                <a href="/" class="info">Контакти</a>
+            </div>
+            <div class="contacts-container">
+                <div class="info">+38 (044) 150-99-09</div>
+                <a href="/" class="info" id="sign-up">Записатись на екскурсію</a>
+            </div>
+        </div>
+        <svg width="360" height="157" viewBox="0 0 360 157" xmlns="http://www.w3.org/2000/svg" class="logo">
+            <g id="logo" text-anchor="middle">
+                <text id="logo-text" font-size="72" x="50%" y="50%">
+                    ART HALL
+                </text>
+                <line x1="0" y1="90" x2="360" y2="90" stroke="var(--main-color)" stroke-width="4"></line>
+                <text id="logo-text" font-size="26" x="50%" y="80%">
+                    LUXURY RESIDENCE
+                </text>
+            </g>
+        </svg>
+    </div>
+    <div class="sticky-header" id="sticky-header">
+        <div class="contacts">
+            <div class="contacts-container">
+                <a href="/" class="info">Про проект</a>
+                <a href="/" class="info">Переваги</a>
+                <a href="/" class="info">ККонтакти</a>
+            </div>
+            <div class="contacts-container">
+                <div class="info">+38 (044) 150-99-09</div>
+                <a href="/" class="info" id="sign-up">Записатись на екскурсію</a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/sticky-header.js"></script>
+    <article id="about">
+        <div class="article-wrapper">
+            <div class="article-container">
+                <div class="article-name">
+                    Про нас
+                </div>
+                <div class="article-content">
+                    Натхненням для створення концепції послужила вихідна архітектура самого Будинку: геометричні
+                    елементи
+                    парадного фасаду, що приковує до себе увагу, світлі і просторі приміщення з п'ятиметровими
+                    стелями, відразу відсилають до естетики американського класичного арт-деко. <br><br>
+                    Творці проекту хотіли перенести вас в урочисту атмосферу вишуканих вечірніх туалетів,
+                     енергійних танців під звуки джазу, веселощів і духу свободи в оточенні елегантних інтер'єрів.
+                </div>
+            </div>
+            <img src="./assets/img/about-img.webp" alt="Image about us" class="about-img-container">
+        </div>
+    </article>
+    <article id="location">
+        <div class="article-wrapper" id="location-wrapper">
+            <div id="map" class="about-img-container"></div>
+               <script src="./assets/js/map.js"></script>
+         
+            <script async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhEs1p5AEPV2Ty0v5jf-huRjOsyxI9CN4&map_ids=70cb34d8510ba180&libraries=places&callback=initMap"></script>
+
+            <div class="article-container">
+                <div class="article-name">Оточення <br>
+                    <a href="https://www.google.com/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4021351,30.2518263,10z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234"
+                        class="adress link">
+                        вул. Козацька, 16</a>
+                </div>
+                <div class="article-content">
+                    Київ, Центр міжнародної торгівлі, відомі театри, музеї, найкращі ресторани - центр Києва
+                    -
+                    центр тяжіння успіху, натхнення і сили. <br> <br>
+                     Ідеальне розташування в тихому провулку забезпечує відчуття клубності і приватності власникам
+                     будинки
+                    Art Hall.
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="advantages">
+        <div class="article-wrapper">
+            <div class="article-container" style="width: 100%;">
+                <div class="article-name">Переваги</div>
+                <div class="article-content" id="advantages-container">
+                    <ul id="adv-list">
+                        <li class="adv-li-item inactive" onclick="active_sw(0)">Фітнесс зона</li>
+                        <li class="adv-li-item inactive" onclick="active_sw(1)">Пентхауси: 5м висота стелі</li>
+                        <li class="adv-li-item inactive" onclick="active_sw(2)">Просторі тераси</li>
+                        <li class="adv-li-item inactive" onclick="active_sw(3)">Дитяча зона</li>
+                        <li class="adv-li-item inactive" onclick="active_sw(4)">Свій ритейл</li>
+                        <li class="adv-li-item inactive" onclick="active_sw(5)">Видові харакетристики</li>
+                        <li class="adv-li-item inactive" onclick="active_sw(6)">Приватність</li>
+                    </ul>
+                    <div id="adv-img">
+                        <img src="./assets/img/fitness-zone.jpg" alt="advantage: fitness" class="adv-img hidden"
+                            id="adv-fitness">
+                        <img src="./assets/img/high-celings.jpg" alt="advantage: high-celings" class="adv-img hidden"
+                            id="adv-celings">
+                        <img src="./assets/img/balcony.jpg" alt="advantage: big balcony" class="adv-img hidden"
+                            id="adv-balcony">
+                        <img src="./assets/img/child-zone.jpg" alt="advantage: zone for childs" class="adv-img hidden"
+                            id="adv-child-zone">
+                        <img src="./assets/img/own-retail.jpg" alt="advantage: own retail" class="adv-img hidden"
+                            id="adv-retail">
+                        <img src="./assets/img/horizont.jpg" alt="advantage: nice skyline" class="adv-img hidden"
+                            id="adv-horizon">
+                        <img src="./assets/img/img-privacy.jpg" alt="advantage: privacy" class="adv-img hidden"
+                            id="adv-privacy">
+                    </div>
+                    <script src="./assets/js/advanteges-picker.js"></script>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="style">
+        <div class="article-wrapper">
+            <div class="article-container">
+                <div class="article-name">Стиль</div>
+                <div class="article-content" id="style-content">
+                    <div class="style-content">Головний фасад будівлі виконаний в неокласичному стилі з виступаючими
+                        деталями і великим кількість вікон. Це чітко окреслена композиція з полірованого граніту з
+                        елементами рустики, великоформатного керамограніта і декоративними елементами, виконаними на
+                        замовлення. <br> </div>
+                    <div class="style-content">В основі інтер'єрів Будинку Art Hall пріоритетними є естетика, де
+                        видима розкіш поєднується з комфортом, в неї ідеально вписуються будь-які технічні прилади та
+                        пристрою. Це дозволяє створювати дійсно актуальні і модні рішення в рамках
+                        усталеної класики. <br> </div>
+                </div>
+                <img src="./assets/img/style.jpg" alt="About our style" class="about-img-container" id="style-img">
+            </div>
+        </div>
+    </article>
+    <article id="offers">
+        <div class="article-wrapper">
+            <div class="article-container">
+                <div class="article-name">Офери <div class="adress">Клубний Дім Art Hall — це 7 поверхів и всього
+                        90 апартаментів</div>
+                </div>
+                <div class="article-content" id="offers-content">
+                    <div class="article-content-half">
+                        <img src="./assets/img/aps.jpg" alt="Apartments photo" class="half-img">
+                        <div class="article-name">Апартаменти</div>
+                        <div>
+                            З другого по шостий поверх гармонійно сплановані апартаменти різної площі від 35 до
+                             80 м2, жителям кожного з яких гарантована максимальна приватність і комфорт.
+                        </div>
+                        <div class="btn-wrapper"><a href="#sign-in" class="sign-in-btn">Дізнитися ціну</a></div>
+                    </div>
+                    <div class="article-content-half">
+                        <img src="./assets/img/pent-house.jpg" alt="Apartments photo" class="half-img">
+                        <div class="article-name">Пентхаусы</div>
+                        <div>
+                            На сьомому поверсі Будинку передбачено кілька пентхаусів. У розпорядженні їх жителів:
+                             високі полотки 5,5 метрів, вільне планування для створення стильного, урочистого
+                             інтер'єру.
+                        </div>
+                        <div class="btn-wrapper"><a href="#sign-in" class="sign-in-btn">Дізнитися ціну</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="comfort-zone">
+        <div class="article-wrapper">
+            <div id="comfort-zone-wrapper">
+                <div class="article-container">
+                    <div class="article-name">
+                        <span>Зона комфорту</span>
+                        <div class="adress">Рівень комфорту часто визначає рівень життя. Тому, ми продумали
+                            кожну
+                            деталь</div>
+                    </div>
+
+                </div>
+                <div class="article-container article-comfort-zone">
+                    <div class="article-content article-comfort-zone">
+                        <div class="comfort-zone-text">
+                            Подорож у світ бездоганного смаку, починається з лобі: стіни прикрашає покриття з
+                             натурального каменю, дзеркальні декоративні панно, виконані за авторським дизайном.
+                        </div>
+                    </div>
+                    <img src="./assets/img/luxury-enter.png" alt="" class="about-img-container">
+                </div>
+                <div class="article-container article-comfort-zone" id="column-reverse-900px">
+                    <img src="./assets/img/child-zone.jpg" alt="" class="about-img-container">
+
+                    <div class="article-content article-comfort-zone">
+                        <div class="comfort-zone-text">
+                            У північній частині будинку, для маленьких жителів, вдало розташувалася обладнаний майданчик
+                            для розваг.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="article-wrapper">
+            <div class="article-wrapper" id="comfort-list">
+                <div class="article container">
+                    <div class="article-name">
+                        <div class="adress">На першому поверсі до послуг жителів і їх гостей</div>
+                    </div>
+                </div>
+                <div class="article-container" style="width: 100%; margin: auto; padding: 2rem 0;">
+                    <div id="comfort-switch-wrapper">
+                        <ul id="comfort-switch">
+                            <li class="comfort-switch-btn">
+                                <div class="comfort-switch-btn-up"></div>
+                                <div class="comfort-switch-btn-down" onclick="comfort_switch(0)">
+                                    Фітнесс зона
+                                </div>
+                            </li>
+                            <li class="comfort-switch-btn">
+                                <div class="comfort-switch-btn-up"></div>
+                                <div class="comfort-switch-btn-down" onclick="comfort_switch(1)">
+                                    Кафе
+                                </div>
+                            </li>
+                            <li class="comfort-switch-btn ">
+                                <div class="comfort-switch-btn-up"></div>
+                                <div class="comfort-switch-btn-down" onclick="comfort_switch(2)">
+                                    Продуктовий магазин
+                                </div>
+                            </li>
+                            <li class="comfort-switch-btn">
+                                <div class="comfort-switch-btn-up"></div>
+                                <div class="comfort-switch-btn-down" onclick="comfort_switch(3)">
+                                    Аптека
+                                </div>
+                            </li>
+                            <li class="comfort-switch-btn">
+                                <div class="comfort-switch-btn-up"></div>
+                                <div class="comfort-switch-btn-down" onclick="comfort_switch(4)">
+                                    Хімчистка
+                                </div>
+                            </li>
+                            <li class="comfort-switch-btn">
+                                <div class="comfort-switch-btn-up"></div>
+                                <div class="comfort-switch-btn-down" onclick="comfort_switch(5)">
+                                    Салон краси
+                                </div>
+                            </li>
+                            <li class="comfort-switch-btn">
+                                <div class="comfort-switch-btn-up"></div>
+                                <div class="comfort-switch-btn-down" onclick="comfort_switch(6)">
+                                    Мед центр
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="comfort-switch-img"></div>
+                    <script src="./assets/js/comfort-switch.js"></script>
+
+                </div>
+            </div>
+
+        </div>
+    </article>
+    <article id="specs">
+        <div class="article-wrapper">
+            <div class="article-container">
+                <div class="article-name">Харакатеристики<br></div>
+                <div id="specs-grid-container">
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Сервіс</div>
+                        <div class="specs-info">Дві зони ресепшин 24/7</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Территорія</div>
+                        <div class="specs-info">Огородженна территорія</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Лфиты</div>
+                        <div class="specs-info">Бесшумные премиальные лифты OTIS</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Паркінг</div>
+                        <div class="specs-info">Надземний паркінг</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Вентиляція</div>
+                        <div class="specs-info">Центральная система вентиляції</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Вікна</div>
+                        <div class="specs-info">Високоякісні склопакети з підвищеним рівнем шумоізоляції</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Система охорони</div>
+                        <div class="specs-info">Відеоспостереження, охоронна сигналізація по периметру будинку, сучасна
+                            система контролю доступу</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Пожежна сигналізація</div>
+                        <div class="specs-info">Автоматична система пожежогасіння в кожному апартаменті</div>
+                    </div>
+                    <div class="specs-grid-child">
+                        <div class="specs-name">Вентиляція</div>
+                        <div class="specs-info">Система примусової припливно-витяжної вентиляції</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <article id="build-stages">
+        <div class="article-wrapper">
+            <div class="article-container">
+                <div class="article-name">Хід будівництва</div>
+                <div id="build-stages-grid-wrapper">
+                    <div class="build-stages-grid-child">
+                        <img class="build-stage-img" src="./assets/img/build_stage_1.jpg" alt="">
+                        <div class="build-stage-text">Хід будівництва «Art Hall» 23 липня</div>
+                    </div>
+                    <div class="build-stages-grid-child">
+                        <img class="build-stage-img" src="./assets/img/build_stage_2.jpg" alt="">
+                        <div class="build-stage-text">Хід будівництва «Art Hall» 28 жовтня</div>
+                    </div>
+                    <div class="build-stages-grid-child">
+                        <img class="build-stage-img" src="./assets/img/build_stage_3.jpg" alt="">
+                        <div class="build-stage-text">Хід будівництва «Art Hall» 25 грудня</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <article id="sign-in">
+        <div class="article-wrapper" style="height: 100%;">
+            <div class="article-container" style="height: 100%; flex-direction: row; flex-wrap: wrap;">
+                <form id="sign-in-form" onsubmit="">
+                    <label for="name">Записатись на закриту екскурсію</label>
+                    <input type="text" name="name" id="name" required placeholder="Им'я" class="sign-in-field">
+                    <input required placeholder="+38 (xxx) xxx-xx-xx" type="tel" name="telInput" class="sign-in-field">
+                    <div id="checkbox-agree">
+                         <input type="checkbox" name="agree" required id="collect-data">
+                   <label for="agree" style="font-size: 0.8rem;color: #f6f6f6">я згоден з обробкою <span style="text-decoration: underline;">обробкою даних</span></label>
+                   
+                    </div> <input type="button" value="Записатись   " id="sign-in-form-btn">
+                </form>
+                <ul id="contact-us">
+                    <li class="contact-us">+38 (044) 150-99-09</li>
+                    <li class="contact-us">hello@uprock.com</li>
+                    <li class="contact-us"></li>
+                    <li class="contact-us">Офіс продаж</li>
+                    <li class="contact-us">ГРАФІК РАБОТи</li>
+                    <li class="contact-us">ПН-ВС: 09:45 - 19:00</li>
+                    <li class="contact-us">м. Київ, вул. Козацька 17</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
